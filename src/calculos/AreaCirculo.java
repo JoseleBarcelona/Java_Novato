@@ -7,6 +7,8 @@ public class AreaCirculo {
             Scanner miScanner = new Scanner(System.in);
             System.out.println("Introduzca el radio del círculo:");
             double radio = miScanner.nextDouble();
+            miScanner.close();
+
             double areaCirculo = Math.PI * (Math.pow(radio, 2));
             System.out.println("El área del círculo con radio " + radio + " es de: " + areaCirculo);
 
