@@ -12,3 +12,8 @@ public class AreaCirculo {
 
     }
 }
+/*Introduzca el radio del círculo:
+8
+El área del círculo con radio 8.0 es de: 201.06192982974676
+
+ */

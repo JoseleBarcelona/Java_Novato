@@ -28,3 +28,8 @@ public class ClaseSwitch {
 
     }
 }
+/*output
+Escribe la sigla de un punto cardinal (N,S,E,O :
+N
+Te diriges al Norte
+ */

@@ -21,3 +21,10 @@ public class ClaseIf {
         System.out.println("\nEsta instrucción también entra");
     }
 }
+/*Output
+Elige un número entero del 1 al 100:
+50
+El número elegido es 50 y está dentro del rango
+
+Esta instrucción también entra
+ */
