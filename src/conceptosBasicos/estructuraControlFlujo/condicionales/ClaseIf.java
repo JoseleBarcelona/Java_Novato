@@ -1,4 +1,4 @@
-package condicionales;
+package conceptosBasicos.condicionales;
 
 import java.util.Scanner;
 
