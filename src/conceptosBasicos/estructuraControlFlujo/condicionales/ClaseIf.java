@@ -1,4 +1,4 @@
-package conceptosBasicos.condicionales;
+package conceptosBasicos.estructuraControlFlujo.condicionales;
 
 import java.util.Scanner;
 
