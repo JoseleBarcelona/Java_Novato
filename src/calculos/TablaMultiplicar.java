@@ -11,7 +11,7 @@ public class TablaMultiplicar {
 
         System.out.println("TABLA DE MULTIPLICAR DEL " + numero);
             for (int i = 1; i <= 10; i++) {
-                System.out.println(i + " x " + numero + " = " + i * numero);
+                System.out.println(i + " x " + numero + " = " + (i * numero));
             }
 
     }
