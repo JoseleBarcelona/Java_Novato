@@ -12,13 +12,16 @@ public class MediaAritmetica {
 
         do {
             System.out.println("Introduce un número positivo, si quieres salir introduce un número negativo:");
-            numero = sc.nextInt();
+            numero = sc.nextDouble();
+            
             if (numero>0){
                 contador++;
                 sumaTotal += numero;
             }
 
         }while (numero>0);
+
+        sc.close();
 
         System.out.println("Has introducido " + contador + " números, la media aritmética de ellos es de " + (sumaTotal/contador));
 
