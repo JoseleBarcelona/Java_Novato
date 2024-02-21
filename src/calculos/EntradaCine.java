@@ -36,6 +36,7 @@ public class EntradaCine {
 
         System.out.println("¿Tienes la tarjeta de socio? (S/N)");
         String tarjeta = sc.nextLine();
+        sc.close();
 
         double precioTotal;
 

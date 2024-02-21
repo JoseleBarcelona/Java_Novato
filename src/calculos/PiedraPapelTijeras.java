@@ -1,6 +1,5 @@
 package calculos;
 
-import java.util.Map;
 import java.util.Scanner;
 
 public class PiedraPapelTijeras {
@@ -10,6 +9,7 @@ public class PiedraPapelTijeras {
 
         System.out.println("Elige las siguientes opciones: \nPiedra, Papel, Tijeras:");
         String eleccion = sc.nextLine();
+        sc.close();
 
         int IA = (int) (Math.random()*3+1);
         String eleccionIA = "";

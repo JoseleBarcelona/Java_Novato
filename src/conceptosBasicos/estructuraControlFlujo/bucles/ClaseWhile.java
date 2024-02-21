@@ -14,6 +14,7 @@ public class ClaseWhile {
             password = sc.nextLine();
 
         }
+        sc.close();
         System.out.println("Contraseña correcta, bienvenido de nuevo.");
     }
 }

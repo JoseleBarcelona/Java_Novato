@@ -12,6 +12,7 @@ public class RectanguloHueco {
         base = sc.nextInt();
         System.out.println("Introduce la altura");
         altura = sc.nextInt();
+        sc.close();
 
         for (int i = 0; i <altura; i++) {
             for (int j = 0; j < base; j++) {

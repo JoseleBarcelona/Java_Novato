@@ -11,6 +11,8 @@ public class ClaseDoWhile {
 
         do {
             num = sc.nextInt();
+            sc.close();
+            
             if (num == 1) {
 
             }else {

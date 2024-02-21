@@ -16,6 +16,8 @@ public class AdivinaNumero {
         do {
             System.out.println("Introduce un número:");
             numIntroducido = sc.nextInt();
+            sc.close();
+            
             if (numIntroducido > numAleatorio){
                 System.out.println("El número " + numIntroducido + " es mayor que el número que debes adivinar, inténtalo de nuevo:");
             }
