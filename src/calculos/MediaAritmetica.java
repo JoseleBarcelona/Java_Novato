@@ -6,35 +6,54 @@ public class MediaAritmetica {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         double contador = 0;
-        double sumaTotal = 0;
-        double numero;
+        double segundoNumero;
+        double primerNumero;
+        double sumaParcial = 0;
+        double sumaTotal;
+
+        System.out.println("Introduce un número positivo:");
+        primerNumero = sc.nextDouble();
+
+        while (primerNumero < 0) {
+            System.out.println("has introducido un número negativo, introduce por favor un número positivo:");
+            primerNumero = sc.nextDouble();
+        }
 
         do {
-            System.out.println("Introduce un número positivo, si quieres salir introduce un número negativo:");
-            numero = sc.nextDouble();
-            
-            if (numero>0){
+            System.out.println("Introduce otro número positivo. Si quieres terminar, introduce un número negativo o igual a cero:");
+            segundoNumero = sc.nextDouble();
+
+            if (segundoNumero > 0) {
                 contador++;
-                sumaTotal += numero;
+                sumaParcial += segundoNumero;
             }
 
-        }while (numero>0);
+        } while (segundoNumero > 0);
 
         sc.close();
 
-        System.out.println("Has introducido " + contador + " números, la media aritmética de ellos es de " + (sumaTotal/contador));
+        sumaTotal = primerNumero + sumaParcial;
 
+        System.out.println("Has introducido " + (contador + 1) + " números, la media aritmética de ellos es de " + (sumaTotal / (contador + 1)));
     }
 }
-/*
-Introduce un número positivo, si quieres salir introduce un número negativo:
-9
-Introduce un número positivo, si quieres salir introduce un número negativo:
+
+
+/*Introduce un número positivo:
+-9
+has introducido un número negativo, introduce por favor un número positivo:
+-8
+has introducido un número negativo, introduce por favor un número positivo:
+-2
+has introducido un número negativo, introduce por favor un número positivo:
 7
-Introduce un número positivo, si quieres salir introduce un número negativo:
-3
-Introduce un número positivo, si quieres salir introduce un número negativo:
--4
-Has introducido 3.0 números, la media aritmética de ellos es de 6.333333333333333
+Introduce otro número positivo. Si quieres terminar, introduce un número negativo o igual a cero:
+8
+Introduce otro número positivo. Si quieres terminar, introduce un número negativo o igual a cero:
+9
+Introduce otro número positivo. Si quieres terminar, introduce un número negativo o igual a cero:
+-5
+Has introducido 3.0 números, la media aritmética de ellos es de 8.0
  */
